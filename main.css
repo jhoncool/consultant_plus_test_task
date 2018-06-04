@@ -1,0 +1,91 @@
+.board {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+.cell {
+  position: absolute;
+}
+
+.caption {
+  position: absolute;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: black;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.caption--side_left {
+  text-align: right;
+  color: gray;
+}
+
+.caption--side_right {
+  text-align: left;
+  color: gray;
+}
+
+.cell--light {
+  background-color: #fbd3af;
+}
+
+.cell--dark {
+  background-color: #96360c;
+}
+
+
+.figure {
+  position: absolute;
+  text-align: center;
+  background-color: transparent;
+}
+
+.figure--white-king:before {
+  content: "\2654";
+}
+
+.figure--white-queen:before {
+  content: "\2655";
+}
+
+.figure--white-rook:before {
+  content: "\2656";
+}
+
+.figure--white-bishop:before {
+  content: "\2657";
+}
+
+.figure--white-knight:before {
+  content: "\2658";
+}
+
+.figure--white-pawn:before {
+  content: "\2659";
+}
+
+.figure--black-king:before {
+  content: "\265A";
+}
+
+.figure--black-queen:before {
+  content: "\265B";
+}
+
+.figure--black-rook:before {
+  content: "\265C";
+}
+
+.figure--black-bishop:before {
+  content: "\265D";
+}
+
+.figure--black-knight:before {
+  content: "\265E";
+}
+
+.figure--black-pawn:before {
+  content: "\265F";
+}
