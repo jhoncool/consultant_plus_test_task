@@ -2,6 +2,7 @@
   position: absolute;
   left: 100px;
   top: 100px;
+  background-color: #fbd3af;
 }
 
 .cell {
@@ -25,10 +26,6 @@
 .caption--side_right {
   text-align: left;
   color: gray;
-}
-
-.cell--light {
-  background-color: #fbd3af;
 }
 
 .cell--dark {

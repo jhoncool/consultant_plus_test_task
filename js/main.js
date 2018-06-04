@@ -145,16 +145,17 @@
   // draw cells
   for (var i = 0; i < rows; i++) {
     for (var j = 0; j < columns; j++) {
-      var cellColor = (i + j) % 2 === 0 ? "cell--light" : "cell--dark";
-      var $cell = $
-        .div("cell " + cellColor)
-        .css({
-          width: cellSize,
-          height: cellSize,
-          left: j * cellSize,
-          top: i * cellSize
-        })
-        .appendTo($board);
+      if ((i + j) % 2 !== 0) {
+        var $cell = $
+          .div("cell cell--dark")
+          .css({
+            width: cellSize,
+            height: cellSize,
+            left: j * cellSize,
+            top: i * cellSize
+          })
+          .appendTo($board);
+      }
     }
   }
 
